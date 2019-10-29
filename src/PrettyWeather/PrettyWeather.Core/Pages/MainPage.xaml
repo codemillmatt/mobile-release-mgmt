@@ -33,14 +33,9 @@
                 HorizontalOptions="Center"
                 Text="{Binding CityName}" 
                 FontSize="Large"
+                Padding="{OnPlatform iOS='0,20,0,0'}"
                 TextColor="{StaticResource MainTextColor}"/>
-
-            <!--<Image Grid.Row="1"
-                   HorizontalOptions="FillAndExpand"
-                   VerticalOptions="FillAndExpand"
-                   Opacity=".8"
-                   Source="spaceneedle.png"
-                   Margin="0,0,0,-80"/>-->
+            
             <StackLayout Grid.Row="1" Padding="50">
                 <Image 
                    HorizontalOptions="FillAndExpand"
@@ -49,6 +44,7 @@
                    Margin="0,5,0,0">
                     <Image.Source>
                         <FontImageSource FontFamily="{StaticResource FontAwesomeSolid}" Glyph="{Binding Icon, Converter={converters:CurrentConditionsIconConverter}}"/>
+                            <!--<FontImageSource FontFamily="{StaticResource SegMDL2}" Glyph="&#xE708;"/>-->
                     </Image.Source>
                 </Image>
             </StackLayout>

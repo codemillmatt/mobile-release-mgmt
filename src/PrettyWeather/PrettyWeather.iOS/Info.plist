@@ -37,6 +37,8 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>SegMDL2.ttf</string>
+		<string>fa-regular-400.ttf</string>
+		<string>fa-solid-900.ttf</string>
 	</array>
 	<key>CFBundleURLTypes</key>
 	<array>
