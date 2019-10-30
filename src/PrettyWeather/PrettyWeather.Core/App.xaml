@@ -35,7 +35,13 @@
                 x:Key="FontAwesomeSolid"
                 x:TypeArguments="x:String"
                 Android="fa-solid-900.ttf#Font Awesome 5 Free Solid"
-                iOS="Font Awesome 5 Free Solid"/>
+                iOS="Font Awesome 5 Free Solid"/>]
+
+            <OnPlatform
+                x:Key="WeatherIcons"
+                x:TypeArguments="x:String"
+                Android="weathericons-regular-webfont.ttf#Weather Icons"
+                iOS="Weather Icons" />
 
         </ResourceDictionary>
     </Application.Resources>

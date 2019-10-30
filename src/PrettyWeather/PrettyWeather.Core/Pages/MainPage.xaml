@@ -43,8 +43,9 @@
                    Opacity="1"
                    Margin="0,5,0,0">
                     <Image.Source>
-                        <FontImageSource FontFamily="{StaticResource FontAwesomeSolid}" Glyph="{Binding Icon, Converter={converters:CurrentConditionsIconConverter}}"/>
+                        <!--<FontImageSource FontFamily="{StaticResource FontAwesomeSolid}" Glyph="{Binding Icon, Converter={converters:CurrentConditionsIconConverter}}"/>-->
                             <!--<FontImageSource FontFamily="{StaticResource SegMDL2}" Glyph="&#xE708;"/>-->
+                        <FontImageSource FontFamily="{StaticResource WeatherIcons}" Glyph="&#xf00a;"/>
                     </Image.Source>
                 </Image>
             </StackLayout>
