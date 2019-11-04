@@ -10,8 +10,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -21,11 +19,11 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>8.0</string>
+	<string>11.0</string>
 	<key>CFBundleDisplayName</key>
 	<string>PrettyWeather</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.companyname.PrettyWeather</string>
+	<string>com.codemilltech.PrettyWeather</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>UILaunchStoryboardName</key>
@@ -39,6 +37,7 @@
 		<string>SegMDL2.ttf</string>
 		<string>fa-regular-400.ttf</string>
 		<string>fa-solid-900.ttf</string>
+		<string>weathericons-regular-webfont.ttf</string>
 	</array>
 	<key>CFBundleURLTypes</key>
 	<array>
