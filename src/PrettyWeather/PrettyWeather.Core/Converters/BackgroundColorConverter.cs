@@ -18,6 +18,9 @@ namespace PrettyWeather.Converters
                 if (temp > 75)
                     return IsStart ? resources["WarmStartColor"] : resources["WarmEndColor"];
 
+                if (temp >= 45 && temp < 60)
+                    return IsStart ? resources["MildStartColor"] : resources["MildEndColor"];
+
                 if (temp < 32)
                     return IsStart ? resources["NightStartColor"] : resources["NightEndColor"];
 

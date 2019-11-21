@@ -1,6 +1,6 @@
-﻿using Microsoft.AppCenter;
-using Microsoft.AppCenter.Analytics;
-using Microsoft.AppCenter.Crashes;
+﻿//using Microsoft.AppCenter;
+//using Microsoft.AppCenter.Analytics;
+//using Microsoft.AppCenter.Crashes;
 using PrettyWeather.Pages;
 using Xamarin.Forms;
 
@@ -21,8 +21,8 @@ namespace PrettyWeather
         protected override void OnStart()
         {
             // Handle when your app starts
-            AppCenter.Start($"ios={iOSAppCenter};android={androidAppCenter};",
-                typeof(Analytics), typeof(Crashes));
+            //AppCenter.Start($"ios={iOSAppCenter};android={androidAppCenter};",
+            //    typeof(Analytics), typeof(Crashes));
 
             Routing.RegisterRoute("saved-cities", typeof(SavedCitiesPage));
         }

@@ -11,7 +11,9 @@
             <Color x:Key="ColdEndColor">#A5C9FD</Color>
             <Color x:Key="WarmStartColor">#F6CC66</Color>
             <Color x:Key="WarmEndColor">#FCA184</Color>
-            <Color x:Key="NightStartColor">#172941</Color>
+            <Color x:Key="NightStartColor">#009FC9</Color>
+            <Color x:Key="MildStartColor">#0ECF14</Color>
+            <Color x:Key="MildEndColor">#00C262</Color>
             <Color x:Key="NightEndColor">#3C6683</Color>
             <Color x:Key="MainTextColor">White</Color>
             <Style x:Key="LabelTemperatureStyle" TargetType="Label">

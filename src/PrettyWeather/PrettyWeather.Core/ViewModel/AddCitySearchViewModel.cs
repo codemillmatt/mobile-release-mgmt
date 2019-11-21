@@ -41,6 +41,8 @@ namespace PrettyWeather.ViewModel
             SearchableCities.Add(new CityInfo { CityName = "Los Angeles", State = "CA", Latitude = 34.05349, Longitude = -118.24532 });
             SearchableCities.Add(new CityInfo { CityName = "Honolulu", State = "HI", Latitude = 21.30485, Longitude = -157.85776 });
             SearchableCities.Add(new CityInfo { CityName = "Denver", State = "CO", Latitude = 39.73715, Longitude = -104.989174 });
+            SearchableCities.Add(new CityInfo { CityName = "Oslo", State = "NO", Latitude = 59.911491 , Longitude = 10.757933 });
+            SearchableCities.Add(new CityInfo { CityName = "Tromsø", State = "NO", Latitude = 69.56544, Longitude = 19.41143 });
         }
 
         private async Task ExecuteCitySelectedCommand()
