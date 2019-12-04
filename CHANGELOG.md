@@ -2,7 +2,11 @@
 
 Here are the changes for Pretty Weather in reverse chronological order.
 
-## vNext
+## Seattle Mobile .NET
+
+* Fixed the fonts!
+
+## 1.o.x
 
 * README add
 * CHANGELOG add
