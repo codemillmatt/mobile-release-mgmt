@@ -84,15 +84,15 @@ But you will want to at least take care of the versioning before any builds occu
 
 One of the great things about Azure DevOps is that it's expandable. Anybody can write custom tasks for it, and submit those tasks as extensions to a _Marketplace_.
 
-Check out the [marketplace here](https://marketplace.visualstudio.com/azuredevops/?WT.mc_id=mobilereleasestrategies-github-masoucou). In it you'll find many different types of extensions that you can put into your build pipelines - and more - like your Boards or Test Plans.
+Check out the [marketplace here](https://marketplace.visualstudio.com/azuredevops/?WT.mc_id=mobile-0000-masoucou). In it you'll find many different types of extensions that you can put into your build pipelines - and more - like your Boards or Test Plans.
 
 The extension I mentioned above that modifies the `Info.plist` or `AndroidManifest.xml` is called [Mobile App Tasks for iOS and Android](https://marketplace.visualstudio.com/items?itemName=vs-publisher-473885.motz-mobile-buildtasks&WT.mc_id=mobilereleasestrategies-github-masoucou) and it works on all types of iOS and Android projects, not just Xamarin ones.
 
 ### Signing and Provisioning
 
-If you plan on doing anything other than building your app, this step(s) is very important. And it involves more than only tasks. It also involves having several files uploaded to the [**Library**](https://docs.microsoft.com/azure/devops/pipelines/library?WT.mc_id=mobilereleasestrategies-github-masoucou) portion of DevOps.
+If you plan on doing anything other than building your app, this step(s) is very important. And it involves more than only tasks. It also involves having several files uploaded to the [**Library**](https://docs.microsoft.com/azure/devops/pipelines/library?WT.mc_id=mobile-0000-masoucou) portion of DevOps.
 
-You need to upload either your [Android KeyStore file](https://docs.microsoft.com/xamarin/android/deploy-test/signing?WT.mc_id=mobilereleasestrategies-github-masoucou), or your [iOS certificate's P12 and provisioning file](https://docs.microsoft.com/xamarin/ios/get-started/installation/device-provisioning/?WT.mc_id=mobilereleasestrategies-github-masoucou). The Library is a safe spot to store these, as it's limited only to the pipelines in the project - meaning people not granted access to your project won't have access to your sensitive files.
+You need to upload either your [Android KeyStore file](https://docs.microsoft.com/xamarin/android/deploy-test/signing?WT.mc_id=mobile-0000-masoucou), or your [iOS certificate's P12 and provisioning file](https://docs.microsoft.com/xamarin/ios/get-started/installation/device-provisioning/?WT.mc_id=mobile-0000-masoucou). The Library is a safe spot to store these, as it's limited only to the pipelines in the project - meaning people not granted access to your project won't have access to your sensitive files.
 
 Both the KeyStore and P12 files have passwords that go along with them. And you should store those in encrypted variables within your pipeline. You can read more about generating KeyStore files and P12 files here.
 
@@ -108,11 +108,11 @@ In an interesting twist, you can re-sign iOS IPA files after they have been buil
 
 ### Distributing
 
-Distributing the apps to testers or the store is where things get fun. There are tasks built right into DevOps that allow you to do distribution. However, I have found that using [App Center Distribution](https://docs.microsoft.com/appcenter/distribution/?WT.mc_id=mobilereleasestrategies-github-masoucou) to be an easier means to do so. And there happens to be a [DevOps task to deploy](https://docs.microsoft.com/appcenter/distribution/vsts-deploy?WT.mc_id=mobilereleasestrategies-github-masoucou) to App Center Distribution.
+Distributing the apps to testers or the store is where things get fun. There are tasks built right into DevOps that allow you to do distribution. However, I have found that using [App Center Distribution](https://docs.microsoft.com/appcenter/distribution/?WT.mc_id=mobile-0000-masoucou) to be an easier means to do so. And there happens to be a [DevOps task to deploy](https://docs.microsoft.com/appcenter/distribution/vsts-deploy?WT.mc_id=mobile-0000-masoucou) to App Center Distribution.
 
-App Center Distribution allows you to hook into the [various stores](https://docs.microsoft.com/appcenter/distribution/stores/?WT.mc_id=mobilereleasestrategies-github-masoucou), be they [Google](https://docs.microsoft.com/appcenter/distribution/stores/googleplay?WT.mc_id=mobilereleasestrategies-github-masoucou), [Apple](https://docs.microsoft.com/appcenter/distribution/stores/apple?WT.mc_id=mobilereleasestrategies-github-masoucou), or whatever. It also allows you to harness the testing capabilities of each store. In other words, you can deploy to Apple's TestFlight for external beta testing.
+App Center Distribution allows you to hook into the [various stores](https://docs.microsoft.com/appcenter/distribution/stores/?WT.mc_id=mobile-0000-masoucou), be they [Google](https://docs.microsoft.com/appcenter/distribution/stores/googleplay?WT.mc_id=mobile-0000-masoucou), [Apple](https://docs.microsoft.com/appcenter/distribution/stores/apple?WT.mc_id=mobile-0000-masoucou), or whatever. It also allows you to harness the testing capabilities of each store. In other words, you can deploy to Apple's TestFlight for external beta testing.
 
-Plus you can also [setup internal testing groups](https://docs.microsoft.com/appcenter/distribution/groups?WT.mc_id=mobilereleasestrategies-github-masoucou). With all of this control, App Center is the perfect abstraction layer for your distribution needs, and pair it with the fact that you can deploy to it with a DevOps task, it makes perfect sense to use it.
+Plus you can also [setup internal testing groups](https://docs.microsoft.com/appcenter/distribution/groups?WT.mc_id=mobile-0000-masoucou). With all of this control, App Center is the perfect abstraction layer for your distribution needs, and pair it with the fact that you can deploy to it with a DevOps task, it makes perfect sense to use it.
 
 #### Interesting Tidbits
 
@@ -124,7 +124,7 @@ App Center also offers a Mobile Backend as a Service (or MBaaS) with components 
 
 It's entirely possible that you'll want to do more with your releases than a "one-time-shot" as can be accomplished with a build pipeline.
 
-And that's where a [**Release Pipeline**](https://docs.microsoft.com/azure/devops/pipelines/release/?view=azure-devops&WT.mc_id=mobilereleasestrategies-github-masoucou) comes into play.
+And that's where a [**Release Pipeline**](https://docs.microsoft.com/azure/devops/pipelines/release/?view=azure-devops&WT.mc_id=mobile-0000-masoucou) comes into play.
 
 During a build pipeline, you can save the compiled application as an artifact. That artifact then can be passed to a release pipeline.
 
@@ -154,7 +154,7 @@ Each build pipeline will be unique to your application. However, with the concep
 
 For more information, these resources are invaluable:
 
-* [A complete AND FREE course on building applications with Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/?WT.mc_id=mobilereleasestrategies-github-masoucou)
-* [Xamarin.iOS provisioning info](https://docs.microsoft.com/xamarin/ios/get-started/installation/device-provisioning/?WT.mc_id=mobilereleasestrategies-github-masoucou)
-* [Signing Android apps](https://docs.microsoft.com/xamarin/android/deploy-test/signing?WT.mc_id=mobilereleasestrategies-github-masoucou)
-* [Info on preparing your Xamarin app for publishing](https://docs.microsoft.com/learn/modules/prepare-to-publish-your-xamarin-application/?WT.mc_id=mobilereleasestrategies-github-masoucou)
+* [A complete AND FREE course on building applications with Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/?WT.mc_id=mobile-0000-masoucou)
+* [Xamarin.iOS provisioning info](https://docs.microsoft.com/xamarin/ios/get-started/installation/device-provisioning/?WT.mc_id=mobile-0000-masoucou)
+* [Signing Android apps](https://docs.microsoft.com/xamarin/android/deploy-test/signing?WT.mc_id=mobile-0000-masoucou)
+* [Info on preparing your Xamarin app for publishing](https://docs.microsoft.com/learn/modules/prepare-to-publish-your-xamarin-application/?WT.mc_id=mobile-0000-masoucou)
